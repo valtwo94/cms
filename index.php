@@ -1,4 +1,4 @@
-<?php include './includes/db.php' ?>
+<?php include './db/db.php' ?>
 <?php include "./includes/header.php" ?>
 
 <!-- Navigation -->
@@ -11,7 +11,7 @@
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-            <?php include './functions/all_post.php' ?>
+            <?php include './db/all_post.php' ?>
 
         </div>
 

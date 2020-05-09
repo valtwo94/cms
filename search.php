@@ -12,7 +12,7 @@
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-            <?php include './functions/search_post.php' ?>
+            <?php include './db/search_post.php' ?>
         </div>
 
         <!-- Blog Sidebar Widgets Column -->
