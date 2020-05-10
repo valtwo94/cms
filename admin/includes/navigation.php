@@ -14,13 +14,13 @@
         <!-- To User page -->
         <li><a href="/cms">유저화면</a></li>
         <!-- Message -->
-        <?php include './messages.php'; ?>
+        <?php include 'messages.php'; ?>
         <!-- alert -->
-        <?php include './alerts.php'; ?>
+        <?php include 'alerts.php'; ?>
         <!-- profile menu -->
-        <?php include './profile_menu.php'; ?>
+        <?php include 'profile_menu.php'; ?>
     </ul>
     <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-    <?php include './toggle_navigation.php'; ?>
+    <?php include 'toggle_navigation.php'; ?>
     <!-- /.navbar-collapse -->
 </nav>
