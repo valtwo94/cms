@@ -4,7 +4,7 @@
     <!-- Navigation -->
     <?php include './includes/navigation.php' ?>
     <!-- categories page -->
-    <?php include './includes/category_page.php' ?>
+    <?php include './includes/pages/category_page.php' ?>
 
 </div>
 <!-- /#wrapper -->

@@ -23,7 +23,7 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                        <?php include 'db/admin_all_posts.php' ?>
                     </tbody>
                 </table>
             </div>

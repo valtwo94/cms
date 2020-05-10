@@ -4,7 +4,7 @@
     <!-- Navigation -->
     <?php include './includes/navigation.php' ?>
     <!-- Main page -->
-    <?php include './includes/main_page.php' ?>
+    <?php include './includes/pages/main_page.php' ?>
 
 </div>
 <!-- /#wrapper -->

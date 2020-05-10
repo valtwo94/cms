@@ -3,8 +3,26 @@
 
     <!-- Navigation -->
     <?php include './includes/navigation.php' ?>
-    <!-- categories page -->
-    <?php include './includes/posts_page.php' ?>
+    <!-- post page -->
+    <?php
+    if (isset($_GET['source'])) {
+        $source = $_GET['source'];
+    }
+    switch ($source) {
+        case 'all_post':
+            include './includes/pages/posts_page.php';
+            break;
+        case 'add_post':
+            include './includes/pages/add_post_page.php';
+            break;
+        case 'update_post':
+            include './includes/pages/update_post_page.php';
+            break;
+        default:
+            echo 'not found';
+    }
+    ?>
+
 
 </div>
 <!-- /#wrapper -->
