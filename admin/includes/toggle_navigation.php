@@ -18,7 +18,7 @@
             </a>
             <ul id="posts_dropdown" class="collapse">
                 <li>
-                    <a href="#">전체보기</a>
+                    <a href="./posts.php">전체보기</a>
                 </li>
                 <li>
                     <a href="#">글 추가</a>
