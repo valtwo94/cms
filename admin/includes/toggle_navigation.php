@@ -1,16 +1,7 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav">
         <li>
-            <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-        </li>
-        <li>
-            <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-        </li>
-        <li>
-            <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-        </li>
-        <li>
-            <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+            <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> 대시보드</a>
         </li>
         <li>
             <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
@@ -19,21 +10,42 @@
             <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
         </li>
         <li>
-            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="demo" class="collapse">
+            <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> 카테고리</a>
+        </li>
+        <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown">
+                <i class="fa fa-fw fa-arrows-v"></i> 글 <i class="fa fa-fw fa-caret-down"></i>
+            </a>
+            <ul id="posts_dropdown" class="collapse">
                 <li>
-                    <a href="#">Dropdown Item</a>
+                    <a href="#">전체보기</a>
                 </li>
                 <li>
-                    <a href="#">Dropdown Item</a>
+                    <a href="#">글 추가</a>
+                </li>
+                <li>
+                    <a href="#">글 수정</a>
                 </li>
             </ul>
         </li>
         <li class="active">
-            <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+            <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 댓글</a>
         </li>
         <li>
-            <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+            <a href="javascript:;" data-toggle="collapse" data-target="#users_dropdown">
+                <i class="fa fa-fw fa-users"></i> 회원관리 <i class="fa fa-fw fa-caret-down"></i>
+            </a>
+            <ul id="users_dropdown" class="collapse">
+                <li>
+                    <a href="#">카테고리 추가</a>
+                </li>
+                <li>
+                    <a href="#">카테고리 수정</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="index-rtl.html"><i class="fa fa-fw fa-user"></i> 프로필</a>
         </li>
     </ul>
 </div>
