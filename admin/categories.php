@@ -3,8 +3,8 @@
 
     <!-- Navigation -->
     <?php include './includes/navigation.php' ?>
-    <!-- Main page -->
-    <?php include './includes/main_page.php' ?>
+    <!-- categories page -->
+    <?php include './includes/category_page.php' ?>
 
 </div>
 <!-- /#wrapper -->

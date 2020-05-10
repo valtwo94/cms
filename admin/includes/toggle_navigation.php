@@ -10,7 +10,7 @@
             <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
         </li>
         <li>
-            <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> 카테고리</a>
+            <a href="./categories.php"><i class="fa fa-fw fa-file"></i> 카테고리</a>
         </li>
         <li>
             <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown">
@@ -29,7 +29,7 @@
             </ul>
         </li>
         <li class="active">
-            <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> 댓글</a>
+            <a href="blank-page.html"><i class="fa fa-fw fa-comment"></i> 댓글</a>
         </li>
         <li>
             <a href="javascript:;" data-toggle="collapse" data-target="#users_dropdown">
@@ -37,7 +37,7 @@
             </a>
             <ul id="users_dropdown" class="collapse">
                 <li>
-                    <a href="#">카테고리 추가</a>
+                    <a href="/cms/admin/categories">카테고리 추가</a>
                 </li>
                 <li>
                     <a href="#">카테고리 수정</a>

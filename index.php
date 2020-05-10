@@ -1,4 +1,3 @@
-<?php include './db/db.php' ?>
 <?php include "./includes/header.php" ?>
 
 <!-- Navigation -->
