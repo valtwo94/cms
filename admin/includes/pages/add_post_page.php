@@ -9,7 +9,7 @@
                     글 추가
                 </h1>
                 <?php include './db/admin_create_post.php' ?>
-                <form action="./posts.php?source=add_post" method="post" enctype="multipart/form-data">
+                <form action="" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="">글 제목</label>
                         <input type="text" class="form-control" name="post_title">
