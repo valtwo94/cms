@@ -24,8 +24,9 @@
                     </thead>
 
                     <tbody>
+                        <?php include 'db/admin_delete_post.php'; ?>
                         <?php include 'db/admin_all_posts.php' ?>
-                        <?php include 'db/admin_delete_post.php' ?>
+
                     </tbody>
                 </table>
             </div>
