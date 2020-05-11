@@ -8,8 +8,8 @@
                 <h1 class="page-header">
                     글 추가
                 </h1>
-
-                <form action="" method="post" enctype="multipart/form-data">
+                <?php include './db/admin_create_post.php' ?>
+                <form action="./posts.php?source=add_post" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="">글 제목</label>
                         <input type="text" class="form-control" name="post_title">
@@ -21,8 +21,14 @@
                             <?php include './db/admin_update_options.php'; ?>
                         </select>
                     </div>
-
-
+                    <div class="form-group">
+                        <label for="post_author">사용자</label>
+                        <br>
+                        <select name="post_author" id="">
+                            <option value="성현제">성현제</option>
+                            <option value="아무개">아무개</option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label for="post_status">상태</label>
                         <br>

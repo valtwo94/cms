@@ -19,7 +19,7 @@
             include './includes/pages/update_post_page.php';
             break;
         default:
-            echo 'not found';
+            include 'includes/pages/main_page';
     }
     ?>
 
