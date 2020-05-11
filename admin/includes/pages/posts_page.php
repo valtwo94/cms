@@ -22,8 +22,10 @@
                             <th>작성일자</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <?php include 'db/admin_all_posts.php' ?>
+                        <?php include 'db/admin_delete_post.php' ?>
                     </tbody>
                 </table>
             </div>

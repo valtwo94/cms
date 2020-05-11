@@ -24,10 +24,11 @@ while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
         <td><?php echo $post_title ?></td>
         <td><?php echo $post_category_id ?></td>
         <td><?php echo $post_status ?></td>
-        <td><img width="100" src="images/<?php echo $post_image ?>" alt="image"></td>
+        <td><img width="100" src="../images/<?php echo $post_image ?>" alt="image"></td>
         <td><?php echo $post_tags ?></td>
         <td><?php echo $post_comment_count ?></td>
         <td><?php echo $post_date ?></td>
+        <td><a href="posts.php?delete=<?php echo $post_id; ?>">삭제</a></td>
     </tr>
 
 <?php

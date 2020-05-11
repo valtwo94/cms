@@ -7,20 +7,22 @@
     <?php
     if (isset($_GET['source'])) {
         $source = $_GET['source'];
+
+        switch ($source) {
+            case 'all_post':
+                include './includes/pages/posts_page.php';
+                break;
+            case 'add_post':
+                include './includes/pages/add_post_page.php';
+                break;
+            case 'update_post':
+                include './includes/pages/update_post_page.php';
+                break;
+            default:
+                include './includes/pages/posts_page.php';
+        }
     }
-    switch ($source) {
-        case 'all_post':
-            include './includes/pages/posts_page.php';
-            break;
-        case 'add_post':
-            include './includes/pages/add_post_page.php';
-            break;
-        case 'update_post':
-            include './includes/pages/update_post_page.php';
-            break;
-        default:
-            include 'includes/pages/main_page';
-    }
+
     ?>
 
 

@@ -33,9 +33,9 @@
                         <label for="post_status">상태</label>
                         <br>
                         <select name="post_status" id="">
-                            <option value="draft">Post Status</option>
-                            <option value="published">Published</option>
-                            <option value="draft">Draft</option>
+                            <option>Post Status</option>
+                            <option value="게시중">게시중</option>
+                            <option value="수정중">수정중</option>
                         </select>
                     </div>
 
