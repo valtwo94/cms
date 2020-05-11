@@ -6,8 +6,6 @@ if (isset($_POST['submit'])) {
     } else {
         $query = "INSERT INTO categories(cat_title) VALUE ('{$cat_title}') ";
         $create_category_query = mysqli_query($connection, $query);
-        if (!$create_category_query) {
-            die('쿼리실행 실패' . mysqli_error($connection));
-        }
+        confirm($create_category_query);
     }
 }

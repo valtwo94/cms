@@ -1,7 +1,8 @@
 <?php ob_start(); ?>
 <?php include '../db/db.php'; ?>
+<?php include './functions.php'; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
 
@@ -11,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin - Admin Page</title>
+    <title>관리자페이지</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
