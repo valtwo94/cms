@@ -26,6 +26,7 @@
                         <label for="post_author">사용자</label>
                         <br>
                         <select name="post_author" id="">
+                            <option value=<?php echo $post_author ?>><?php echo $post_author ?></option>
                             <option value="성현제">성현제</option>
                             <option value="아무개">아무개</option>
                         </select>
@@ -34,6 +35,7 @@
                         <label for="post_status">상태</label>
                         <br>
                         <select name="post_status" id="">
+                            <option value=<?php echo $post_status ?>><?php echo $post_status ?></option>
                             <option value="게시중">게시중</option>
                             <option value="수정중">수정중</option>
                         </select>
@@ -47,19 +49,19 @@
 
                     <div class="form-group">
                         <label for="post_content">내용</label>
-                        <textarea class="form-control " name="post_content" id="" cols="30" rows="10"></textarea>
+                        <textarea class="form-control " name="post_content" id="" cols="30" rows="10"><?php echo $post_content ?></textarea>
 
                     </div>
 
                     <div class="form-group">
                         <label for="post_tags">태그</label>
-                        <input type="text" class="form-control" name="post_tags">
+                        <input type="text" class="form-control" name="post_tags" value=<?php echo $post_tags ?>>
                     </div>
 
 
 
                     <div class="form-group">
-                        <input class="btn btn-primary" type="submit" name="create_post" value="추가">
+                        <input class="btn btn-primary" type="submit" name="update_post" value="수정">
                     </div>
 
                 </form>
