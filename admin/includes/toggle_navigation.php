@@ -11,12 +11,6 @@ if (isset($_GET['update'])) {
             <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> 대시보드</a>
         </li>
         <li>
-            <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-        </li>
-        <li>
-            <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-        </li>
-        <li>
             <a href="./categories.php"><i class="fa fa-fw fa-file"></i> 카테고리</a>
         </li>
         <li>
@@ -33,7 +27,7 @@ if (isset($_GET['update'])) {
             </ul>
         </li>
         <li>
-            <a href="blank-page.html"><i class="fa fa-fw fa-comment"></i> 댓글</a>
+            <a href="./comments.php?source=all_comments"><i class="fa fa-fw fa-comment"></i> 댓글</a>
         </li>
         <li>
             <a href="javascript:;" data-toggle="collapse" data-target="#users_dropdown">
