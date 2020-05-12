@@ -28,9 +28,10 @@ while ($row = mysqli_fetch_assoc($select_all_comments_query)) {
         <td><?php echo $comment_status ?></td>
         <td><?php echo $comment_date ?></td>
         <td>권한</td>
-        <td><a href="posts.php?source=update_post&update=<?php echo $post_id; ?>">수정</a></td>
-        <td><a href="posts.php?source=all_post&delete=<?php echo $post_id; ?>">삭제</a></td>
-
+        <td><a href="posts.php?source=all_comments&approve=<?php echo $comment_id; ?>">승인</a></td>
+        <td><a href="posts.php?source=all_comments&unapprove=<?php echo $comment_id; ?>">거절</a></td>
+        <td><a href="posts.php?source=all_comments&update=<?php echo $comment_id; ?>">수정</a></td>
+        <td><a href="posts.php?source=all_comments&delete=<?php echo $comment_id; ?>">삭제</a></td>
     </tr>
 
 <?php

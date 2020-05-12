@@ -18,12 +18,8 @@
                             <th>상태</th>
                             <th>작성일자</th>
                             <th>권한</th>
-                            <th>승인</th>
-                            <th>거절</th>
-
                         </tr>
                     </thead>
-
                     <tbody>
                         <?php include 'db/admin_delete_comment.php'; ?>
                         <?php include 'db/admin_view_all_comments.php' ?>

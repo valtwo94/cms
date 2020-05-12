@@ -42,14 +42,7 @@ if (isset($_GET['p_id'])) {
                 <hr>
                 <!-- Blog Comments -->
                 <!-- Comments Form -->
-                <div class="well">
-                    <form role="form" method="post">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3" name="comment" style="resize: none;"></textarea>
-                        </div>
-                        <input type="submit" class="btn btn-primary" name="add_comment" value="추가">
-                    </form>
-                </div>
+                <?php include 'includes/comment_form' ?>
                 <hr>
                 <!-- Posted Comments -->
                 <!-- Comment -->
