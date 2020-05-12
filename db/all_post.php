@@ -29,7 +29,7 @@ while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
     <img class="img-responsive" src="images/<?php echo $post_image ?>" alt="">
     <hr>
     <p><?php echo $post_content ?></p>
-    <a class="btn btn-primary" href="#">더 보기<span class="glyphicon glyphicon-chevron-right"></span></a>
+    <a class="btn btn-primary" href="post_page.php?p_id=<?php echo $post_id ?>">더 보기<span class="glyphicon glyphicon-chevron-right"></span></a>
 
     <hr>
 

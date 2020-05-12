@@ -1,6 +1,6 @@
 <div class="well">
 
-    <h4>Blog Categories</h4>
+    <h4>카테고리 목록</h4>
     <div class="row">
         <div class="col-lg-6">
             <ul class="list-unstyled">
