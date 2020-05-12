@@ -35,7 +35,6 @@
                         <label for="post_status">상태</label>
                         <br>
                         <select name="post_status" id="">
-                            <option value=<?php echo $post_status ?>><?php echo $post_status ?></option>
                             <option value="게시중">게시중</option>
                             <option value="수정중">수정중</option>
                         </select>
@@ -44,6 +43,8 @@
                     <div class="form-group">
                         <label for="post_image">이미지</label>
                         <input type="file" name="post_image">
+                        <br>
+                        <img width="100" src="../images/<?php echo $post_image ?>" alt="">
                     </div>
 
 

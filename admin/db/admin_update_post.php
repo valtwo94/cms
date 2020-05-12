@@ -37,9 +37,21 @@ if (isset($_POST['update_post'])) {
     $post_content = $_POST['post_content'];
     $post_date = date('d-m-y');
 
+
+
     move_uploaded_file($post_image_temp, "../images/$post_image");
-    $query = "UPDATE posts SET post_category_id = '{$post_category_id}', post_title = '{$post_title}', post_author = '{$post_author}', post_date = now(), post_image = '{$post_image}', post_content = '{$post_content}', post_tags = '{$post_tags}', post_comment_count = '{$post_comment_count}', post_status = '{$post_status}' ";
+    $query = "UPDATE posts SET ";
+    $query .= "post_category_id ='{$post_category_id}', ";
+    $query .= "post_title = '{$post_title}', ";
+    $query .= "post_author = '{$post_author}', ";
+    $query .= "post_date = now(), ";
+    $query .= "post_image = '{$post_image}', ";
+    $query .= "post_content = '{$post_content}', ";
+    $query .= "post_tags = '{$post_tags}', ";
+    $query .= "post_status = '{$post_status}' ";
+    $query .= "WHERE post_id = {$post_id}";
     $add_post_query = mysqli_query($connection, $query);
+
     confirm($add_post_query);
     header("Location: posts.php?source=all_post");
 }
