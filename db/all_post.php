@@ -2,6 +2,7 @@
 $query = "SELECT * FROM posts";
 $select_all_posts_query = mysqli_query($connection, $query);
 while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
+    $post_id = $row['post_id'];
     $post_title = $row['post_title'];
     $post_category_id = $row['post_category_id'];
     $post_title = $row['post_title'];
@@ -18,7 +19,7 @@ while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
 
     <!-- First Blog Post -->
     <h2>
-        <a href="#"><?php echo $post_title ?></a>
+        <a href="post_page.php?p_id=<?php echo $post_id ?>"><?php echo $post_title ?></a>
     </h2>
     <p class="lead">
         작성자 : <a href="index.php"><?php echo $post_author ?></a>
