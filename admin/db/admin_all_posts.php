@@ -28,7 +28,9 @@ while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
         <td><?php echo $post_tags ?></td>
         <td><?php echo $post_comment_count ?></td>
         <td><?php echo $post_date ?></td>
+        <td><a href="posts.php?source=update_post&update=<?php echo $post_id; ?>">수정</a></td>
         <td><a href="posts.php?source=all_post&delete=<?php echo $post_id; ?>">삭제</a></td>
+
     </tr>
 
 <?php

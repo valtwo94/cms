@@ -1,3 +1,10 @@
+<?php
+if (isset($_GET['update'])) {
+    $post_id = $_GET['update'];
+}
+
+?>
+
 <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav">
         <li>
@@ -14,7 +21,7 @@
         </li>
         <li>
             <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown">
-                <i class="fa fa-fw fa-arrows-v"></i> 글 <i class="fa fa-fw fa-caret-down"></i>
+                <i class="fa fa-fw fa-pencil"></i> 글 <i class="fa fa-fw fa-caret-down"></i>
             </a>
             <ul id="posts_dropdown" class="collapse">
                 <li>
@@ -22,9 +29,6 @@
                 </li>
                 <li>
                     <a href="./posts.php?source=add_post">글 추가</a>
-                </li>
-                <li>
-                    <a href="./posts.php?source=update_post">글 수정</a>
                 </li>
             </ul>
         </li>
