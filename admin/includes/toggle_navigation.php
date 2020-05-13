@@ -35,10 +35,13 @@ if (isset($_GET['update'])) {
             </a>
             <ul id="users_dropdown" class="collapse">
                 <li>
-                    <a href="/cms/admin/categories">카테고리 추가</a>
+                    <a href="./users.php?source=view_all_users">전체보기</a>
                 </li>
                 <li>
-                    <a href="#">카테고리 수정</a>
+                    <a href="./users.php?source=add_user">회원추가</a>
+                </li>
+                <li>
+                    <a href="./users.php?source=edit_user">회원수정</a>
                 </li>
             </ul>
         </li>

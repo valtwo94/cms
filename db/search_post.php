@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['search'])) {
     $search = trim($_POST['search']);
-    $query = "SELECT * FROM posts WHERE post_tags LIKE '%$search%' ";
+    $query = "SELECT * FROM posts WHERE post_tags LIKE '%$search%' AND post_status = '게시중' ";
     $search_query = mysqli_query($connection, $query);
     if (!$search_query) {
         die('Query FAILED' . mysqli_error($connection));

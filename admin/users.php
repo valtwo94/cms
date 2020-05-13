@@ -9,11 +9,14 @@
         $source = $_GET['source'];
 
         switch ($source) {
-            case 'all_comments':
-                include './includes/pages/comments_page.php';
+            case 'add_user':
+                include './includes/pages/add_user_page.php';
+                break;
+            case 'edit_user':
+                include './includes/pages/edit_user_page.php';
                 break;
             default:
-                include './includes/pages/comments_page.php';
+                include './includes/pages/view_all_users_page.php';
         }
     }
 
