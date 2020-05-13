@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['p_id'])) {
     $the_comments_id = $_GET['p_id'];
-    $query = "SELECT * FROM comments WHERE comment_post_id = $the_comments_id";
+    $query = "SELECT * FROM comments WHERE comment_post_id = $the_comments_id AND comment_status = '승인' ";
     $show_comments_query = mysqli_query($connection, $query);
     confirm($show_comments_query);
     while ($row = mysqli_fetch_assoc($show_comments_query)) {
