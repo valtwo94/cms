@@ -42,7 +42,8 @@ if (isset($_GET['p_id'])) {
                 <hr>
                 <!-- Blog Comments -->
                 <!-- Comments Form -->
-                <?php include 'includes/comment_form' ?>
+                <?php include 'db/create_comment.php' ?>
+                <?php include 'includes/comment_form.php' ?>
                 <hr>
                 <!-- Posted Comments -->
                 <!-- Comment -->

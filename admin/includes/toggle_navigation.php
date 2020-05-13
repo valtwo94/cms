@@ -8,7 +8,7 @@ if (isset($_GET['update'])) {
 <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav">
         <li>
-            <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> 대시보드</a>
+            <a href="./index.php"><i class="fa fa-fw fa-dashboard"></i> 대시보드</a>
         </li>
         <li>
             <a href="./categories.php"><i class="fa fa-fw fa-file"></i> 카테고리</a>
