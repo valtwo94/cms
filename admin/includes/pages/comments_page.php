@@ -21,8 +21,10 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php include 'db/admin_approve_comment.php'; ?>
+                        <?php include 'db/admin_unapprove_comment.php'; ?>
                         <?php include 'db/admin_delete_comment.php'; ?>
-                        <?php include 'db/admin_view_all_comments.php' ?>
+                        <?php include 'db/admin_view_all_comments.php'; ?>
                     </tbody>
                 </table>
             </div>

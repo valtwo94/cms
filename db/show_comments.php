@@ -24,6 +24,7 @@ if (isset($_GET['p_id'])) {
                     <?php echo $comment_author; ?>
                     <small><?php echo $comment_date; ?></small>
                 </h4>
+                <h5 class="media-heading"><?php echo $comment_email ?></h5>
                 <?php echo $comment_content; ?>
             </div>
         </div>
