@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['category'])) {
     $category_id = $_GET['category'];
-    $query = "SELECT * FROM posts WHERE post_category_id = $category_id";
+    $query = "SELECT * FROM posts WHERE post_category_id = $category_id AND post_status = '게시중'";
     $select_category_post_query = mysqli_query($connection, $query);
     while ($row = mysqli_fetch_assoc($select_category_post_query)) {
         $post_id = $row['post_id'];

@@ -7,7 +7,7 @@ if (isset($_GET['delete'])) {
     confirm($find_postid_query);
     $row = mysqli_fetch_assoc($find_postid_query);
     $the_post_id = $row['comment_post_id'];
-    // 댓글 갯수 수 추가
+    // 댓글 갯수 수 감소
     $query3 = "SELECT post_comment_count FROM posts WHERE post_id = $the_post_id";
     $find_post_comment_count = mysqli_query($connection, $query3);
     confirm($find_post_comment_count);
