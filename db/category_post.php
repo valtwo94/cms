@@ -1,9 +1,10 @@
 <?php
 if (isset($_GET['category'])) {
-    $post_id = $_GET['category'];
-    $query = "SELECT * FROM posts WHERE post_category_id = $post_id";
+    $category_id = $_GET['category'];
+    $query = "SELECT * FROM posts WHERE post_category_id = $category_id";
     $select_category_post_query = mysqli_query($connection, $query);
     while ($row = mysqli_fetch_assoc($select_category_post_query)) {
+        $post_id = $row['post_id'];
         $post_title = $row['post_title'];
         $post_category_id = $row['post_category_id'];
         $post_title = $row['post_title'];
@@ -15,8 +16,9 @@ if (isset($_GET['category'])) {
         $post_comment_count = $row['post_comment_count'];
         $post_status = $row['post_status'];
         $post_views_count = $row['post_views_count'];
-
-
+        $query2 = "SELECT * FROM comments WHERE comment_post_id = $post_id";
+        $show_category_comments = mysqli_query($connection, $query2);
+        confirm($show_category_comments);
 ?>
         <!-- Page Content -->
         <div class="container">
@@ -39,50 +41,16 @@ if (isset($_GET['category'])) {
                     <hr>
                     <!-- Post Content -->
                     <p class="lead"><?php echo $post_content ?></p>
+                    <a class="btn btn-primary" href="post_page.php?p_id=<?php echo $post_id ?>">자세히<span class="glyphicon glyphicon-chevron-right"></span></a>
                     <hr>
-                    <!-- Blog Comments -->
-                    <!-- Comments Form -->
-                    <?php include 'includes/comment_form.php' ?>
-                    <hr>
-                    <!-- Posted Comments -->
-                    <!-- Comment -->
-                    <div class="media">
-                        <a class="pull-left" href="#">
-                            <img class="media-object" src="http://placehold.it/64x64" alt="">
-                        </a>
-                        <div class="media-body">
-                            <h4 class="media-heading">Start Bootstrap
-                                <small>August 25, 2014 at 9:30 PM</small>
-                            </h4>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </div>
-                    <!-- Comment -->
-                    <div class="media">
-                        <a class="pull-left" href="#">
-                            <img class="media-object" src="http://placehold.it/64x64" alt="">
-                        </a>
-                        <div class="media-body">
-                            <h4 class="media-heading">Start Bootstrap
-                                <small>August 25, 2014 at 9:30 PM</small>
-                            </h4>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                            <!-- Nested Comment -->
-                            <div class="media">
-                                <a class="pull-left" href="#">
-                                    <img class="media-object" src="http://placehold.it/64x64" alt="">
-                                </a>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Nested Start Bootstrap
-                                        <small>August 25, 2014 at 9:30 PM</small>
-                                    </h4>
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                </div>
-                            </div>
-                            <!-- End Nested Comment -->
-                        </div>
-                    </div>
 
-            <?php
-        }
-    } ?>
+
+
+                </div>
+
+
+
+        <?php
+
+    }
+} ?>
