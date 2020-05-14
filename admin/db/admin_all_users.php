@@ -30,6 +30,7 @@ while ($row = mysqli_fetch_assoc($select_all_users_query)) {
         <td><img width="100" src="../images/<?php echo $user_image ?>" alt="image"></td>
         <td><a href="users.php?source=all_user&normal=<?php echo $user_id; ?>">일반</a></td>
         <td><a href="users.php?source=all_user&admin=<?php echo $user_id; ?>">관리자</a></td>
+        <td><a href="users.php?source=all_user&delete=<?php echo $user_id; ?>">삭제</a></td>
     </tr>
 
 <?php

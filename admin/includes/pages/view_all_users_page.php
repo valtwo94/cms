@@ -21,11 +21,11 @@
                     </thead>
 
                     <tbody>
+                        <?php include 'db/admin_delete_user.php'; ?>
                         <?php include 'db/admin_normal_user.php'; ?>
                         <?php include 'db/admin_admin_user.php'; ?>
                         <?php include 'db/admin_all_users.php'; ?>
                         <?php include 'db/admin_delete_user.php'; ?>
-
                     </tbody>
                 </table>
             </div>

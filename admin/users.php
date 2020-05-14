@@ -13,7 +13,7 @@
                 include './includes/pages/add_user_page.php';
                 break;
             case 'edit_user':
-                include './includes/pages/edit_user_page.php';
+                include './includes/pages/update_user_page.php';
                 break;
             default:
                 include './includes/pages/view_all_users_page.php';
