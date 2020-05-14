@@ -28,8 +28,8 @@ while ($row = mysqli_fetch_assoc($select_all_users_query)) {
         <td><?php echo $user_name ?></td>
         <td><?php echo $user_role ?></td>
         <td><img width="100" src="../images/<?php echo $user_image ?>" alt="image"></td>
-        <td><a href="users.php?source=update_user&update=<?php echo $user_id; ?>">수정</a></td>
-        <td><a href="users.php?source=all_user&delete=<?php echo $user_id; ?>">삭제</a></td>
+        <td><a href="users.php?source=all_user&normal=<?php echo $user_id; ?>">일반</a></td>
+        <td><a href="users.php?source=all_user&admin=<?php echo $user_id; ?>">관리자</a></td>
     </tr>
 
 <?php

@@ -17,15 +17,14 @@
                             <th>이름</th>
                             <th>계정</th>
                             <th>프로필 이미지</th>
-                            <th>수정</th>
-                            <th>삭제</th>
                         </tr>
                     </thead>
 
                     <tbody>
-
+                        <?php include 'db/admin_normal_user.php'; ?>
+                        <?php include 'db/admin_admin_user.php'; ?>
                         <?php include 'db/admin_all_users.php'; ?>
-                        <?php include 'db/admin_delete_user.php' ?>
+                        <?php include 'db/admin_delete_user.php'; ?>
 
                     </tbody>
                 </table>
