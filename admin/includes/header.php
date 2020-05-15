@@ -1,5 +1,6 @@
 <?php ob_start(); ?>
 <?php session_start(); ?>
+<?php include 'includes/session_validation.php'; ?>
 <?php include '../db/db.php'; ?>
 <?php include './functions.php'; ?>
 <!DOCTYPE html>
