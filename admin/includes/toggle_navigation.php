@@ -46,7 +46,7 @@ if (isset($_GET['update'])) {
             </ul>
         </li>
         <li>
-            <a href="index-rtl.html"><i class="fa fa-fw fa-user"></i> 프로필</a>
+            <a href="./profile.php"><i class="fa fa-fw fa-user"></i> 프로필</a>
         </li>
     </ul>
 </div>

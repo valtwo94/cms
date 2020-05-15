@@ -7,6 +7,6 @@
     <?php include 'sidebar_categories.php' ?>
 
     <!-- Side Widget Well -->
-    <?php include 'widget.php'; ?>
+    <?php include 'login_form.php'; ?>
 
 </div>
