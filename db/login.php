@@ -19,6 +19,10 @@ if (isset($_POST['login'])) {
         if ($useremail !== $db_user_email && $userpassword !== $db_user_password) {
             header("Location: ../index.php");
         } else if ($useremail == $db_user_email && $userpassword == $db_user_password && '관리자' == $db_user_role) {
+            $_SESSION['user_name'] = $db_user_name;
+            $_SESSION['user_email'] = $db_user_email;
+            $_SESSION['user_password'] = $db_user_password;
+            $_SESSION['user_role'] = $db_user_role;
             header("Location: admin");
         } else {
             header("Location: ../index.php");
