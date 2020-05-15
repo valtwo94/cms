@@ -16,13 +16,16 @@ if (isset($_POST['login'])) {
         $db_user_password = $row['user_password'];
         $db_user_name = $row['user_name'];
         $db_user_role = $row['user_role'];
+        $db_user_image = $row['user_image'];
         if ($useremail !== $db_user_email && $userpassword !== $db_user_password) {
             header("Location: ../index.php");
-        } else if ($useremail == $db_user_email && $userpassword == $db_user_password && '관리자' == $db_user_role) {
+        } else if ($useremail === $db_user_email && $userpassword === $db_user_password && '관리자' == $db_user_role) {
+            $_SESSION['user_id'] = $db_user_id;
             $_SESSION['user_name'] = $db_user_name;
             $_SESSION['user_email'] = $db_user_email;
             $_SESSION['user_password'] = $db_user_password;
             $_SESSION['user_role'] = $db_user_role;
+            $_SESSION['user_image'] = $db_user_image;
             header("Location: admin");
         } else {
             header("Location: ../index.php");
