@@ -40,9 +40,6 @@ if (isset($_GET['update'])) {
                 <li>
                     <a href="./users.php?source=add_user">회원추가</a>
                 </li>
-                <li>
-                    <a href="./users.php?source=edit_user">회원수정</a>
-                </li>
             </ul>
         </li>
         <li>
