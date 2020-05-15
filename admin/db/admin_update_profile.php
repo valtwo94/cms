@@ -19,6 +19,9 @@ if (isset($_POST['update_profile'])) {
     $query .= "WHERE user_id = {$user_id} ";
     $upadte_profile_query = mysqli_query($connection, $query);
     confirm($upadte_profile_query);
+    $_SESSION['user_email'] = $profile_email;
+    $_SESSION['user_password'] = $profile_password;
+    $_SESSION['user_name'] = $profile_name;
     $_SESSION['user_image'] = $profile_image;
     header("Location: profile.php?source=");
 }
