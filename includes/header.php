@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <?php include 'db/db.php'; ?>
 <?php include 'functions.php'; ?>
 <!DOCTYPE html>

@@ -1,6 +1,6 @@
 <?php include 'db/login.php'; ?>
 <div class="well">
-    <form action="db/login.php" method="post" class="form-group">
+    <form action="" method="post" class="form-group">
         <div class="form-group">
             <input type="email" name=user_email class="form-control" placeholder="이메일">
         </div>
