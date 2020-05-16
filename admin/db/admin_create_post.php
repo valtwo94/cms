@@ -18,4 +18,5 @@ if (isset($_POST['create_post'])) {
     $query .= "VALUES('{$post_category_id}', '{$post_title}', '{$post_author}', now(), '{$post_image}', '{$post_content}', '{$post_tags}', '{$post_comment_count}', '{$post_status}', '{$post_views_count}' ) ";
     $add_post_query = mysqli_query($connection, $query);
     confirm($add_post_query);
+    header('Location : posts.php?source=all_post');
 }

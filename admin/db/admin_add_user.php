@@ -14,4 +14,5 @@ if (isset($_POST['create_user'])) {
     $query .= "VALUES('{$user_email}', '{$user_password}', '{$user_name}', now(), '{$user_image}', '{$user_role}' ) ";
     $add_user_query = mysqli_query($connection, $query);
     confirm($add_user_query);
+    header("Location: ./users.php?source=all_users");
 }

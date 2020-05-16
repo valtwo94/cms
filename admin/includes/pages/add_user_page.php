@@ -6,9 +6,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    글 추가
+                    회원추가
                 </h1>
-                <?php include 'db/admin_add_user.php' ?>
+                <?php include 'db/admin_add_user.php'; ?>
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="">이메일</label>
