@@ -10,11 +10,14 @@
 
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
-            ['Year', 'Sales', 'Expenses', 'Profit'],
-            ['2014', 1000, 400, 200],
-            ['2015', 1170, 460, 250],
-            ['2016', 660, 1120, 300],
-            ['2017', 1030, 540, 350]
+            ['Data', 'Count'],
+            <?php
+            $elements = ['글', '카테고리', '회원', '댓글'];
+            $element_data = [$post_count, $category_count, $user_count, $comment_count];
+            for ($i = 0; $i < 4; $i++) {
+                echo "['{$elements[$i]}'" . "," . "{$element_data[$i]}],";
+            }
+            ?>
         ]);
 
         var options = {
@@ -26,6 +29,6 @@
 
         var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
 
-        chart.draw(data, google.charts.Bar.convertOptions(options));
+        chart.draw(data, options);
     }
 </script>

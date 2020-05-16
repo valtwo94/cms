@@ -104,10 +104,8 @@
                 </div>
             </div>
         </div>
-        <!-- /.row -->
-        <div class="row">
-            <?php include 'includes/chart.php' ?>
-        </div>
+        <!-- chart -->
+        <?php include 'includes/chart.php' ?>
         <!-- /.row -->
     </div>
     <!-- /.container-fluid -->
