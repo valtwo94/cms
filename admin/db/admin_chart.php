@@ -1,6 +1,5 @@
 <?php ?>
 
-
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
     google.charts.load('current', {
@@ -10,25 +9,21 @@
 
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
-            ['Data', 'Count'],
-            <?php
-            $elements = ['글', '카테고리', '회원', '댓글'];
-            $element_data = [$post_count, $category_count, $user_count, $comment_count];
-            for ($i = 0; $i < 4; $i++) {
-                echo "['{$elements[$i]}'" . "," . "{$element_data[$i]}],";
-            }
-            ?>
+            ['데이터', '건'],
+            ['글', <?php echo $post_count; ?>],
+            ['카테고리', <?php echo $category_count; ?>],
+            ['회원', <?php echo $user_count; ?>],
+            ['댓글', <?php echo $comment_count; ?>]
         ]);
 
         var options = {
             chart: {
-                title: 'Company Performance',
-                subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                title: '게시판 현황',
             }
         };
 
         var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
 
-        chart.draw(data, options);
+        chart.draw(data, google.charts.Bar.convertOptions(options));
     }
 </script>

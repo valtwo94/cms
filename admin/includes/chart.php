@@ -1,1 +1,1 @@
-<div id="columnchart_material" style="width: auto; height: 500px;"></div>
+<div id="columnchart_material" style="width: 'auto'; height: 500px;"></div>

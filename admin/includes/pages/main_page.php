@@ -105,7 +105,8 @@
             </div>
         </div>
         <!-- chart -->
-        <?php include 'includes/chart.php' ?>
+        <?php include 'db/admin_chart.php'; ?>
+        <?php include 'includes/chart.php'; ?>
         <!-- /.row -->
     </div>
     <!-- /.container-fluid -->
