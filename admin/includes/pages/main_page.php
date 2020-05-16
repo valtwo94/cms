@@ -105,6 +105,9 @@
             </div>
         </div>
         <!-- /.row -->
+        <div class="row">
+            <?php include 'includes/chart.php' ?>
+        </div>
         <!-- /.row -->
     </div>
     <!-- /.container-fluid -->
