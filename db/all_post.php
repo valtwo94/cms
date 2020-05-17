@@ -1,5 +1,12 @@
 <?php
-$query = "SELECT * FROM posts WHERE post_status = '게시중'";
+$page_num = $_GET['page'];
+$page_start_num = 0 + ($page_num - 1) * 3;
+$per_page = 3;
+$post_query_count = "SELECT * FROM posts";
+$find_count = mysqli_query($connection, $post_query_count);
+$count = mysqli_num_rows($find_count);
+$count = ceil($count / 5);
+$query = "SELECT * FROM posts WHERE post_status = '게시중' LIMIT $page_start_num, $per_page";
 $select_all_posts_query = mysqli_query($connection, $query);
 while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
     $post_id = $row['post_id'];
