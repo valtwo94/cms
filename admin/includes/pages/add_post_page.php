@@ -32,7 +32,6 @@
                         <label for="post_status">상태</label>
                         <br>
                         <select name="post_status" id="">
-                            <option>Post Status</option>
                             <option value="게시중">게시중</option>
                             <option value="수정중">수정중</option>
                         </select>
