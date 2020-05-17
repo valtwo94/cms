@@ -38,6 +38,7 @@
                         </thead>
 
                         <tbody>
+                            <?php include 'db/admin_checkbox_control.php'; ?>
                             <?php include 'db/admin_delete_post.php'; ?>
                             <?php include 'db/admin_all_posts.php' ?>
 
