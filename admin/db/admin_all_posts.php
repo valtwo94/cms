@@ -25,6 +25,7 @@ while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
 
     <!-- First Blog Post -->
     <tr>
+        <td><input type="checkbox" name="check_post" value=<?php echo $post_id; ?>></td>
         <td><?php echo $post_id ?></td>
         <td><?php echo $post_author ?></td>
         <td><?php echo $post_title ?></td>
